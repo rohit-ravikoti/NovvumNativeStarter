@@ -1,5 +1,12 @@
 {
-  "presets": [ "react-native" ],
+  "presets": [
+    {
+      "plugins": [
+        "./App/Lib/babelRelayPlugin"
+      ]
+    },
+    "react-native"
+  ],
   "env": {
     "development": {
       "sourceMaps": "inline"

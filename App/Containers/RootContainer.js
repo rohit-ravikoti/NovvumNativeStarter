@@ -6,6 +6,10 @@ import NavigationRouter from '../Navigation/NavigationRouter'
 import { connect } from 'react-redux'
 import StartupActions from '../Redux/StartupRedux'
 import ReduxPersist from '../Config/ReduxPersist'
+import Relay, {
+  DefaultNetworkLayer,
+  // RootContainer,
+} from 'react-relay';
 
 // Styles
 import styles from './Styles/RootContainerStyle'
