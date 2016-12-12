@@ -19,7 +19,8 @@
     "android:devices": "$ANDROID_HOME/platform-tools/adb devices",
     "android:logcat": "$ANDROID_HOME/platform-tools/adb logcat *:S ReactNative:V ReactNativeJS:V",
     "android:shake": "$ANDROID_HOME/platform-tools/adb devices | grep '\\t' | awk '{print $1}' | sed 's/\\s//g' | xargs -I {} $ANDROID_HOME/platform-tools/adb -s {} shell input keyevent 82",
-    "flow": "flow --show-all-errors"
+    "flow": "flow --show-all-errors",
+    "storybook": "storybook start -p 7007"
   },
   "dependencies": {
     "apisauce": "^0.6.0",
@@ -65,7 +66,8 @@
     "reactotron-redux": "^1.5.2",
     "reactotron-redux-saga": "^1.5.2",
     "snazzy": "^5.0.0",
-    "standard-flow": "^1.0.0"
+    "standard-flow": "^1.0.0",
+    "@kadira/react-native-storybook": "^2.0.0"
   },
   "ava": {
     "files": [
